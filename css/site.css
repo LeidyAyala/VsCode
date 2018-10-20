@@ -1,0 +1,45 @@
+/*clase para eliminar margenes internas, esta se puede usar en cualquier lugar del codigo*/
+.no-padding{
+padding:0!important;
+}
+.margin-b-20{
+    margin-bottom:20 px;
+}
+.color-rojo :hover {
+    color: #ff0000;
+}
+/*elementos*/
+.col-md-4 span{
+    /* border:2px solid #00ff00; pone un marco verde*/
+    /* background: #000000; fondo negro*/
+  /*  border-radius: 50%; pone un ovalo al rededor del texto*/
+}
+.col-md-6 >div .midiv{
+    border: 3px dotted #0000ff;
+}
+#alto {
+height: 100vh;
+background-color: #0f0f0f;
+}
+.col-md-4 :hover{
+    background-color: #0f0;
+    transition: background-color 2s;
+}
+.col-md-4{
+    transition: background-color 2s;
+}
+.col-md-4::before{ 
+    /*antepone un texto en el contenido de cada div, para este caso dividido en 4*/
+    content:'xxx'; 
+}
+.col-md-4::after{
+    /*pone un textoal final del contenido de cada div, para este caso dividido en 4*/
+    content:'yyy';
+}
+
+.moneda::before{
+    conten:'$';
+}
+.moneda::after{
+    content:"cop";
+}
